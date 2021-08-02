@@ -1,0 +1,20 @@
+{
+    "name": "mahmut/euromsg",
+    "description": "EuroMsgExpress Transactional Email Api",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Mahmut Özdemir",
+            "email": "bilgi@mahmutozdemir.com.tr",
+            "homepage": "http://www.mahmutozdemir.com.tr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EuroMsg\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
