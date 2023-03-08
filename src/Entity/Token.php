@@ -28,7 +28,7 @@ class Token
     protected $tokenValue;
 
     /**
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $expireTime;
 
@@ -106,7 +106,7 @@ class Token
      */
     public function isExpired()
     {
-        if(time() > $this->expireTime->getTimestamp()) return true;
+        if(time() > strtotime($this->expireTime)) return true;
         return false;
     }
 
