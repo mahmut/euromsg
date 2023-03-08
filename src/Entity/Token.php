@@ -106,7 +106,7 @@ class Token
      */
     public function isExpired()
     {
-        if(time() > $this->expireTime) return true;
+        if(time() > $this->expireTime->getTimestamp()) return true;
         return false;
     }
 
